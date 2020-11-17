@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <script src="./p5.js"></script>
+  <script src="./addons/p5.sound.min.js"></script>
+  <script src="./sketch.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/css/uikit.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.5.9/js/uikit.min.js"></script>
+</head>
+
+<body>
+  <section class="uk-section uk-padding-remove-vertical">
+    <div class="uk-container uk-container-expand uk-padding-remove-horizontal">
+      <div class="uk-flex" uk-height-viewport>
+        <div class="left uk-width-1-2" style="background: grey;">left</div>
+        <div class="right uk-width-1-2" style="background: beige;">
+          <div class="uk-inline">
+          <div id="ue-audio-p5-player"></div>
+          <div class="uk-position-center uk-overlay uk-overlay-default" id="currentTime" style="z-index: 99;"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  
+  <input type="hidden" id="trackUrl" value="audio.mp3">
+
+
+</body>
+
+</html>
